@@ -1,0 +1,72 @@
+{
+  "name": "phpdoc-swagger-indenter",
+  "displayName": "PHPDoc Swagger Indenter",
+  "description": "Streamline your Swagger/OpenAPI PHP documentation with PHPDoc Swagger Indenter for VSCode. This extension simplifies comment formatting, ensuring clean, readable annotations for efficient API spec generation.",
+  "publisher": "AlfredDagenais",
+  "author": {
+    "name": "Alfred Dagenais",
+    "email": "jesuis@alfreddagenais.com"
+  },
+  "type": "module",
+  "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/alfreddagenais/phpdoc-swagger-indenter"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "keywords": [
+    "Swagger",
+    "phpDoc",
+    "openapi",
+    "swagger spec",
+    "api spec",
+    "swagger format",
+    "Swagger Documentation",
+    "PHPDoc Formatter",
+    "OpenAPI Specification",
+    "API Documentation",
+    "Swagger YAML Formatter",
+    "Visual Studio Code Extension",
+    "API Design Tool",
+    "Swagger Comment Formatting",
+    "VSCode Swagger Integration",
+    "OpenAPI Comment Formatter"
+  ],
+  "activationEvents": [],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "phpdoc-swagger-indenter.format",
+        "title": "Swagger PHPDoc: Format spec"
+      },
+      {
+        "command": "phpdoc-swagger-indenter.unformat",
+        "title": "Swagger PHPDoc: Unformat spec"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@prettier/plugin-php": "^0.22.1",
+    "prettier": "^3.1.1"
+  }
+}
